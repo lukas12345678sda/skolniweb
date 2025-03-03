@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="cs">
 <head>
@@ -6,13 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Food4u</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+        .food-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .food-section img {
+            width: 40%;
+            border-radius: 10px;
+        }
+        .food-text {
+            width: 55%;
+        }
+        .reverse {
+            flex-direction: row-reverse;
+        }
+    </style>
 </head>
 <body>
-
     <div id="website">
         <header>
             <div class="logo">
-                <img src="img/Flux_Dev_A_vibrant_and_stylized_logo_for_Food4u_a_modern_food__3.jpeg" alt="Lukas s.r.o.">
+                <img src="img/logo.jpeg"Logo Food4u">
             </div>
             <nav>
                 <ul>
@@ -24,20 +48,46 @@
         </header>
 
         <div class="banner">
-            <div class="banner-image">
-            </div>
+            <div class="banner-image"></div>
             <div class="banner-text">
                 <h1>Vítejte na naší webové stránce</h1>
                 <p>Nabízíme nejchutnější jídla na trhu</p>
             </div>
         </div>
 
-        <div style="max-width: 400px;padding: 60px;">
-            <h2>Dobrý den, toto je nadpis</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc</p>
-        </div>
+        <main>
+            <section>
+                <h2>Dobrý den, toto je nadpis</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies.</p>
+            </section>
 
+            <section class="food-section">
+                <img src="img/jidlo1.jpg" alt="Jídlo 1">
+                <div class="food-text">
+                    <h3>1️⃣ Špičkoví kuchaři s bohatými zkušenostmi 👨‍🍳🍽️</h3>
+                    <p> V naší kuchyni pracují jen ti nejlepší! Naši kuchaři mají širokou škálu zkušeností a každý pokrm připravují s důrazem na kvalitu, chuť a čerstvost. Díky jejich odbornosti a vášni pro gastronomii si můžete být jisti, že každé jídlo, které od nás dostanete, bude prvotřídní a pečlivě připravené.</p>          
+                   
+                </div>
+            </section>
+
+            <section class="food-section reverse">
+                <img src="img/jidlo2.jpg" alt="Jídlo 2">
+                <div class="food-text">
+                    <h3>2️⃣ Objednávky na týdny dopředu, vždy včas a teplé 📅🔥</h3>
+                    <p>Plánování jídla nikdy nebylo jednodušší! U nás si můžete objednat svá oblíbená jídla na několik týdnů dopředu a my vám je doručíme přesně na čas. Díky promyšlené logistice garantujeme, že vaše objednávka dorazí čerstvá a stále teplá, připravená k okamžité konzumaci.</p>
+                </div>
+            </section>
+
+            <section class="food-section">
+                <img src="img/jidlo3.jpg" alt="Jídlo 3">
+                <div class="food-text">
+                    <h3>3️⃣ Topová bio kvalita a etický chov 🌱🐄</h3>
+                    <p>Záleží nám na kvalitě surovin i na tom, odkud pocházejí. Všechno naše maso pochází ze zvířat z volného chovu (grass-fed), která žijí v přirozených podmínkách, bez zbytečných hormonů a antibiotik. Dbáme na ekologii, udržitelnost a férový přístup k chovu – a to se odráží nejen v chuti, ale i v celkové kvalitě našich jídel.</p>
+                </div>
+            </section>
+            <iframe style="border:none" src="https://frame.mapy.cz/s/dacogodude" width="100%" height="466" frameborder="0"></iframe>
+        </main>
     </div>
-
 </body>
 </html>
+
